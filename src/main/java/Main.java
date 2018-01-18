@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Main {
 
+public static void main (String[] args) {
 
-    public static void main(String[] args) {
         String path = "src/main/resources/liczby.txt";
         String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
 
