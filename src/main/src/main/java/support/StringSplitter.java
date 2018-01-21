@@ -1,26 +1,24 @@
-package support;import java.lang.reflect.Array;
-import java.util.*;
-import java.util.regex.Pattern;
+package support;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class StringSplitter {
 
-
-    Map<Integer, String[]> map = new HashMap<Integer, String[]>();
-
-    public Map<Integer, String[]>  splitString(List<String> listInjected) {
+    public List<String> splitString(List<String> listInjected) {
+        List<String> list = new ArrayList<String>();
+        String tab[];
 
         for (int i = 0; i < listInjected.size(); i++) {
-
-            String[] tab = listInjected.get(i).split("\\b\\s+\\b");
-
-            map.put(i, tab);
+            tab = listInjected.get(i).split("\\b\\s+\\b");
+            list.addAll(Arrays.asList(tab));
+            if (!(i == listInjected.size() - 1)) {
+                list.add("\n");
+                System.out.println(list);
+            }
         }
-        for (int key : map.keySet()) {
-            String[] value = map.get(key);
-           // System.out.println(key + ": " + Arrays.asList(value));
-
-        }
-        return map;
+        return list;
     }
 }
 
