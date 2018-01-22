@@ -2,7 +2,6 @@ import logic.Processor;
 import support.FileHelper;
 import support.NumbersProcessor;
 import support.StringSplitter;
-import support.StringParser;
 
 import java.io.File;
 import java.util.List;
@@ -33,10 +32,10 @@ public static void main (String[] args) {
         List<String> listContainingDigitsAsStrings = numberSeparator.filterNumberStrings(list);
 
         support.StringSplitter stringSplitter = new StringSplitter();
-        List<String> listString = stringSplitter.splitString(listContainingDigitsAsStrings);
+        List<String[]> listString = stringSplitter.splitString(listContainingDigitsAsStrings);
 
-        support.StringParser stringParserInsideMap = new StringParser();
-        List<Integer> listWithDigit = stringParserInsideMap.parseStringToInt(listString);
+//        support.StringParser stringParserInsideMap = new StringParser();
+//        List<Integer> listWithDigit = stringParserInsideMap.parseStringToInt(listString);
 //
 //        support.FinalStringArray sumCalculation = new FinalStringArray();
 //        Map<Integer, String> finalMap= sumCalculation.calculateSumInRow(mapWithDigit);
