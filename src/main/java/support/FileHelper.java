@@ -1,7 +1,8 @@
-package support;import java.io.*;
+package support;import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class FileHelper {
@@ -19,10 +20,10 @@ public class FileHelper {
         return readList;
     }
 
-    public List<String> writeF(File file, Map<Integer, String> map) {
+    public List<String> writeF(File file, List<String> finalList) {
         try (PrintWriter printWriter = new PrintWriter(file)) {
-            for (int k : map.keySet()) {
-                String value = map.get(k);
+            for (int i=0;i<finalList.size();i++) {
+                String value = finalList.get(i);
                 printWriter.write(value);
 
             }

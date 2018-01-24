@@ -1,13 +1,9 @@
 import logic.Processor;
 import support.FileHelper;
 import support.NumbersProcessor;
-import support.StringSplitter;
 
 import java.io.File;
 import java.util.List;
-
-
-
 
 public class Main {
 
@@ -19,7 +15,7 @@ public class Main {
 
 public static void main (String[] args) {
 
-        String path = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\main\\resources\\liczby.txt";
+        String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\resources\\liczby.txt";
            String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
         //  Main main=new Main(Processor);
 
@@ -40,9 +36,9 @@ public static void main (String[] args) {
 //        support.FinalStringArray sumCalculation = new FinalStringArray();
 //        Map<Integer, String> finalMap= sumCalculation.calculateSumInRow(mapWithDigit);
 //
-//        File fileString = new File(outputPath);
-//        fileHelper.writeF(fileString,finalMap);
-//    }
+     File fileString = new File(outputPath);
+      fileHelper.writeF(fileString,listContainingDigitsAsStrings);
+ }
 
 }
-}
+
