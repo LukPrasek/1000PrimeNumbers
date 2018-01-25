@@ -18,7 +18,7 @@ public class NumbersProcessor {
                 finalListForWritingToFile.add(singleRowArray);
             }
         }
-        System.out.println("Final list" + finalListForWritingToFile);
+       // System.out.println("Final list" + finalListForWritingToFile);
         return finalListForWritingToFile;
     }
 
@@ -44,7 +44,7 @@ public class NumbersProcessor {
             }
             arrayContainingSpringsAndSum += digitAsString;
             arrayContainingSpringsAndSum += sumAsString;
-            System.out.println(arrayContainingSpringsAndSum);
+            //System.out.println(arrayContainingSpringsAndSum);
         }
         return arrayContainingSpringsAndSum;
     }

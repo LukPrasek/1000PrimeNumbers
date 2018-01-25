@@ -33,7 +33,7 @@ public class Program {
 
         NumbersProcessor numberSeparator = new NumbersProcessor();
         List<String> listContainingDigitsAsStrings = numberSeparator.filterNumberStrings(list);
-        fileHelper.writeF()
+        fileHelper.writeF(fileO,listContainingDigitsAsStrings);
 
 
 //        System.out.println("**************");
