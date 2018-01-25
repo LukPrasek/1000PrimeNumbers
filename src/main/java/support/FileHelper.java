@@ -1,4 +1,6 @@
-package support;import java.io.File;
+package support;
+
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -20,9 +22,10 @@ public class FileHelper {
         return readList;
     }
 
+
     public List<String> writeF(File file, List<String> finalList) {
         try (PrintWriter printWriter = new PrintWriter(file)) {
-            for (int i=0;i<finalList.size();i++) {
+            for (int i = 0; i < finalList.size(); i++) {
                 String value = finalList.get(i);
                 printWriter.write(value);
 
