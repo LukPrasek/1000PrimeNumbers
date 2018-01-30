@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class FileHelper {
 
     public List<String> read(File file) {
-        List<String> readList = new ArrayList<String>();
+        List<String> readList = new ArrayList<>();
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
                 readList.add(scanner.nextLine());
@@ -18,7 +18,7 @@ public class FileHelper {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return readList;
+        return null;
     }
 
     public List<String> writeF(File file, List<String> finalList) {

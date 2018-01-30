@@ -18,20 +18,15 @@ public class Program {
 
     public void startApp(String path) {
 
-
         String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
 
         File file = new File(path);
         File fileO = new File(outputPath);
 
-        FileHelper fileHelper = new FileHelper();
         List<String> list = fileHelper.read(file);
 
-        NumbersProcessor numberSeparator = new NumbersProcessor();
-        List<String> listContainingDigitsAsStrings = numberSeparator.filterNumberStrings(list);
-        fileHelper.writeF(fileO,listContainingDigitsAsStrings);
-
-
+        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(list);
+        fileHelper.writeF(fileO, listContainingDigitsAsStrings);
     }
 }
 
