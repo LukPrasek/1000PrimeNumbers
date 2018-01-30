@@ -20,12 +20,9 @@ public class Program {
 
 
         String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
-        //  Main main=new Main(Processor);
 
         File file = new File(path);
         File fileO = new File(outputPath);
-
-
 
         FileHelper fileHelper = new FileHelper();
         List<String> list = fileHelper.read(file);

@@ -1,37 +1,68 @@
 package NumbersProcessor.logic;
 
-import java.util.Arrays;
+import org.junit.Assert;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class NumbersProcessorTest {
     private NumbersProcessor numbersProcessor;
-    List<String> actual;
-    List<String> expected;
+
+    public List<String> readFileToCreateListForTest() {
+        String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\src\\test\\resources\\Test_1.txt";
+        File file = new File(path);
+        List<String> enterList = new ArrayList<String>();
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                enterList.add(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return enterList;
+    }
+
+    public List<String> createListAsResultOfTest() {
+        String pathResult = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\src\\test\\resources\\Test_1_result.txt";
+        File file = new File(pathResult);
+        List<String> resultList = new ArrayList<String>();
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                resultList.add(scanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return resultList;
+    }
 
     @org.junit.Test
     public void filterNumberStringsTest() {
+        NumbersProcessorTest npt = new NumbersProcessorTest();
+        List<String> enterList = readFileToCreateListForTest();
+        List<String> expectedResultList = createListAsResultOfTest();
         numbersProcessor = new NumbersProcessor();
+        List<String> resultListFromTest = numbersProcessor.filterNumberStrings(readFileToCreateListForTest());
 
-        String c1 = "   2 3  5 7  11 13  17 19  23 29";//+"\n"
-        //String c2 = "1313 131 3115 1";
-        actual = Arrays.asList(c1);
-        //actual.add(c2);
+        ArrayList<String> comp_List = new ArrayList<String>();
+        for (String temp : resultListFromTest)
+            comp_List.add(expectedResultList.contains(temp) ? "Yes" : "No");
+        System.out.println(comp_List);
 
-        String c3 = "2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 + 23 +  29 = 129";
-        expected = Arrays.asList(c3);
-        //expected.add(c3);
-        System.out.println("Expected" + expected);
-        System.out.println("Return from method" + numbersProcessor.filterNumberStrings(actual));
+        ArrayList<Integer> compList2 = new ArrayList<Integer>();
+        for (String temp2 : expectedResultList)
+            compList2.add(resultListFromTest.contains(temp2) ? 1 : 0);
+        System.out.println(compList2);
 
-        // Zawsze musze miec dwie listy?? Moze jest łatwiejszy sposob na to, aby miec liste wejsciowa i wyjsciowa z automatu?
+        System.out.println(resultListFromTest.get(0));
+        System.out.println(expectedResultList.get(0));
 
+        Assert.assertTrue("Equal",resultListFromTest.get(0)==expectedResultList.get(0));
 
-        //assertTrue(numbersProcessor.filterNumberStrings(actual).equals(actual));
-        //assertArrayEquals(expected.toArray(),numbersProcessor.filterNumberStrings(actual).toArray());
-        // Assert.assertTrue(actual.contains(expected));
-        // assertEquals(expected,numbersProcessor.filterNumberStrings(actual));
-        //assertEquals(expected.size(),numbersProcessor.filterNumberStrings(actual).size() );
-
-
+        //Assert.assertArrayEquals(numbersProcessor.filterNumberStrings(enterList).toArray(), resultList.toArray());
+        //Assert.assertArrayEquals(resultListFromTest.toArray(), createListAsResultOfTest().toArray());
     }
 }

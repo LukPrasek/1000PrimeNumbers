@@ -13,7 +13,7 @@ public class NumbersProcessor {
             if (readList.get(i).matches("^[\\d\\s]+$")) {
                 String currentStringContainingOnlyNumbers = readList.get(i);
                 String currentStringTrimmed = currentStringContainingOnlyNumbers.trim();
-                String[] splitStringIntoDigits = currentStringTrimmed.split("\\b\\s+\\b");
+                String[] splitStringIntoDigits = currentStringTrimmed.split(("\\b\\s+\\b"));
                 String singleRowArray = getIntegers(splitStringIntoDigits) + "\n";//nadpisuje liste
                 finalListForWritingToFile.add(singleRowArray);
             }
