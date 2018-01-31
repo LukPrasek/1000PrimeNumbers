@@ -25,13 +25,16 @@ public class ProgramTest {
         Program program = new Program(mockNumbersProcessor, mockFileHelper);
 
         //when
-        Mockito.when(mockFileHelper.read(mockFile)).thenReturn(new ArrayList<>());
-        Mockito.when(mockNumbersProcessor.filterNumberStrings(mockList)).thenReturn(new ArrayList());
 
+        //Mockito.when(program.startApp(path).thenReturn(path));
+
+        //Mockito.when(mockNumbersProcessor.filterNumberStrings(mockList)).thenReturn(new ArrayList());
+Mockito.verify(mockFileHelper.read(path)), program.startApp(path)
+Mockito.verify(mockFileHelper.read(path)), program.startApp(path)
         //then
-
-        Assert.assertEquals(new ArrayList<>(), mockFileHelper.read(mockFile));
-        Assert.assertEquals(new ArrayList<>(), mockNumbersProcessor.filterNumberStrings(mockList));
+        Assert.assertEquals(program.startApp(path), mockFileHelper.read(path));
+        //Assert.assertEquals(new ArrayList<>(), mockFileHelper.read(mockFile));
+        //Assert.assertEquals(new ArrayList<>(), mockNumbersProcessor.filterNumberStrings(mockList));
 
     }
 }

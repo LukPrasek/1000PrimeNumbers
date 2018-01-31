@@ -3,7 +3,6 @@ package NumbersProcessor;
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
 
-import java.io.File;
 import java.util.List;
 
 public class Program {
@@ -16,14 +15,13 @@ public class Program {
         this.fileHelper = fileHelper;
     }
 
-    public void startApp(String path) {
+    public String startApp(String path) {
 
-        String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
-        File file = new File(path);
-        File fileO = new File(outputPath);
-        List<String> currentList = fileHelper.read(file);
+        List<String> currentList = fileHelper.read(path);
         List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(currentList);
-        fileHelper.writeF(fileO, listContainingDigitsAsStrings);
+
+        return fileHelper.writeF(path, listContainingDigitsAsStrings);
+
     }
 }
 

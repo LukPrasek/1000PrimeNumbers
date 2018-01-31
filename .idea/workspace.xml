@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8bbeee-55d6-49e2-92c9-476675dbc31e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java" afterPath="$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java" afterPath="$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liczby.txt" afterPath="$PROJECT_DIR$/src/main/resources/liczby.txt" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/liczbyNew.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java" afterPath="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java" />
       <change beforePath="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java" afterPath="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/src/test/resources/Test_1_result.txt" afterPath="$PROJECT_DIR$/src/main/src/test/resources/Test_1_result.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt" afterPath="$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt" afterPath="$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/Main.class" afterPath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/Main.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/Program.class" afterPath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/Program.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/logic/NumbersProcessor.class" afterPath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/logic/NumbersProcessor.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/support/FileHelper.class" afterPath="$PROJECT_DIR$/src/main/target/classes/NumbersProcessor/support/FileHelper.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/test-classes/NumbersProcessor/ProgramTest.class" afterPath="$PROJECT_DIR$/src/main/target/test-classes/NumbersProcessor/ProgramTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/test-classes/NumbersProcessor/logic/NumbersProcessorTest.class" afterPath="$PROJECT_DIR$/src/main/target/test-classes/NumbersProcessor/logic/NumbersProcessorTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/test-classes/Test_2.txt" afterPath="$PROJECT_DIR$/src/main/target/test-classes/Test_2.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/target/test-classes/Test_2_result.txt" afterPath="$PROJECT_DIR$/src/main/target/test-classes/Test_2_result.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/main/target/" />
@@ -24,71 +32,79 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProgramTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mockito.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Mockito.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-              <folding>
-                <element signature="e#2874#2875#0" expanded="true" />
-                <element signature="e#2926#2927#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumbersProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProgramTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FileHelper.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ProgramTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Mockito.class" pinned="false" current-in-tab="true">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Mockito.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#2968#2969#0" expanded="true" />
+                    <element signature="e#3026#3027#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/main/src/main/java/support/StringSplitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/support/NumbersProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Processor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/NumbersProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/NumbersProcessor.java" />
@@ -127,16 +142,17 @@
         <option value="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/ProgramTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt" />
-        <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt" />
         <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_1.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/liczby.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_1_result.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt" />
+        <option value="$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/support/FileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java" />
+        <option value="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java" />
         <option value="$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java" />
       </list>
     </option>
@@ -167,7 +183,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="960" />
@@ -228,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,24 +312,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="NumbersProcessor" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1000PrimeNumbers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,14 +341,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="NumbersProcessor.logic" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\212434152\Lukasz\private\java\workspace\1000PrimeNumbers\src\main\src\test" />
       <recent name="D:\Users\212434152\Lukasz\private\java\workspace\1000PrimeNumbers\src\main\src\main\resources" />
       <recent name="D:\Users\212434152\Lukasz\private\java\workspace\1000PrimeNumbers\src\main\src\main" />
       <recent name="D:\Users\212434152\Lukasz\private\java\workspace\1000PrimeNumbers\src\main\src\main\java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="NumbersProcessor.logic" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\212434152\Lukasz\private\java\workspace\1000PrimeNumbers\src\main\src\test\resources" />
@@ -362,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProgramTest">
+  <component name="RunManager" selected="JUnit.ProgramTest.startApp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -398,7 +406,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="NumbersProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumbersProcessorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="NumbersProcessor.logic.*" />
@@ -423,20 +431,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="NumbersProcessorTest.filterNumberStringsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NumbersProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="NumbersProcessor.logic.*" />
+          <option name="PATTERN" value="logic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="main" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="NumbersProcessor.logic" />
-      <option name="MAIN_CLASS_NAME" value="NumbersProcessor.logic.NumbersProcessorTest" />
-      <option name="METHOD_NAME" value="filterNumberStringsTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="logic" />
+      <option name="MAIN_CLASS_NAME" value="logic.NumbersProcessorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -561,17 +569,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest.filterNumberStringsTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ProgramTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ProgramTest.startApp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ProgramTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ProgramTest.startApp" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ProgramTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ProgramTest.startApp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest.filterNumberStringsTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ProgramTest.startApp" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ProgramTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.NumbersProcessorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -592,39 +600,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NumbersProcessorTest - 2018.01.31 at 09h 21m 49s.xml">
+    <history-entry file="NumbersProcessorTest - 2018.01.31 at 20h 33m 11s.xml">
       <configuration name="NumbersProcessorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumbersProcessorTest - 2018.01.31 at 09h 22m 20s.xml">
+    <history-entry file="NumbersProcessorTest - 2018.01.31 at 20h 37m 24s.xml">
       <configuration name="NumbersProcessorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumbersProcessorTest_filterNumberStringsTest - 2018.01.31 at 07h 19m 49s.xml">
-      <configuration name="NumbersProcessorTest.filterNumberStringsTest" configurationId="JUnit" />
+    <history-entry file="NumbersProcessorTest_(1) - 2018.01.31 at 21h 20m 33s.xml">
+      <configuration name="NumbersProcessorTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumbersProcessorTest_filterNumberStringsTest - 2018.01.31 at 08h 40m 30s.xml">
-      <configuration name="NumbersProcessorTest.filterNumberStringsTest" configurationId="JUnit" />
+    <history-entry file="NumbersProcessorTest_(1) - 2018.01.31 at 21h 21m 06s.xml">
+      <configuration name="NumbersProcessorTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProgramTest - 2018.01.31 at 09h 34m 33s.xml">
+    <history-entry file="NumbersProcessorTest_(1) - 2018.01.31 at 21h 22m 21s.xml">
+      <configuration name="NumbersProcessorTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProgramTest - 2018.01.31 at 20h 47m 40s.xml">
       <configuration name="ProgramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProgramTest - 2018.01.31 at 17h 01m 34s.xml">
+    <history-entry file="ProgramTest - 2018.01.31 at 20h 48m 07s.xml">
       <configuration name="ProgramTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProgramTest - 2018.01.31 at 17h 02m 02s.xml">
-      <configuration name="ProgramTest" configurationId="JUnit" />
+    <history-entry file="ProgramTest_startApp - 2018.01.31 at 21h 51m 12s.xml">
+      <configuration name="ProgramTest.startApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProgramTest - 2018.01.31 at 17h 19m 09s.xml">
-      <configuration name="ProgramTest" configurationId="JUnit" />
+    <history-entry file="ProgramTest_startApp - 2018.01.31 at 21h 55m 39s.xml">
+      <configuration name="ProgramTest.startApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProgramTest - 2018.01.31 at 17h 21m 19s.xml">
-      <configuration name="ProgramTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProgramTest_startApp - 2018.01.31 at 17h 02m 18s.xml">
+    <history-entry file="ProgramTest_startApp - 2018.01.31 at 22h 00m 45s.xml">
       <configuration name="ProgramTest.startApp" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -635,18 +643,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23125" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30508474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30253622" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3019068" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -665,8 +673,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/src/main/java/support/StringSplitter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/src/main/java/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/main/java/support/NumbersProcessor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/main/java/logic/Processor.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/PrintWriter.java">
@@ -764,32 +770,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="169" column="13" lean-forward="false" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -800,25 +785,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="148" column="13" lean-forward="false" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_2_result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/liczbyNew.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="529">
           <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -827,48 +821,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Mockito.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding>
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#2926#2927#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/logic/NumbersProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="458">
+          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/test/resources/Test_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/logic/NumbersProcessorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/stubbing/OngoingStubbing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Mockito.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="107" column="5" lean-forward="true" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+          <folding>
+            <element signature="e#2968#2969#0" expanded="true" />
+            <element signature="e#3026#3027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NumbersProcessor/support/FileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/test/java/NumbersProcessor/ProgramTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding />
         </state>
       </provider>
