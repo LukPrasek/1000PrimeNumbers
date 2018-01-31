@@ -18,7 +18,7 @@ public class FileHelper {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        return null;
+        return readList;
     }
 
     public List<String> writeF(File file, List<String> finalList) {

@@ -13,52 +13,57 @@ public class NumbersProcessorTest {
     //given
 
     private NumbersProcessor numbersProcessor = new NumbersProcessor();
-    List<String> resultList= new ArrayList<String>();
-    List<String> enterList= new ArrayList<String>();
 
     public List<String> readFileToCreateListForTest() {
         String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\src\\test\\resources\\Test_1.txt";
         File file = new File(path);
-        enterList = new ArrayList<String>();
+        List<String> enterList = new ArrayList<>();
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
                 enterList.add(scanner.nextLine());
             }
+            scanner.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("Enter liste:\n"+enterList);
         return enterList;
     }
 
     public List<String> createListAsResultOfTest() {
         String pathResult = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\src\\test\\resources\\Test_1_result.txt";
         File file = new File(pathResult);
-        resultList = new ArrayList<>();
+        List<String> resultList = new ArrayList<>();
+
         try (Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNextLine()) {
-                resultList.add(scanner.nextLine());
-            }
+
+                while (scanner.hasNextLine()) {
+                    resultList.add(scanner.nextLine() + "\n");
+                    }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("Result list from file:"+resultList);
         return resultList;
     }
-
 
     @org.junit.Test
     public void filterNumberStringsTest() {
 
         //when
         numbersProcessor = new NumbersProcessor();
-        numbersProcessor.filterNumberStrings(enterList);
+        List<String> actual = numbersProcessor.filterNumberStrings(readFileToCreateListForTest());
+        List<String> expected = createListAsResultOfTest();
+        System.out.println("Actual:\n" + actual);
+        System.out.println("Expected:\n" + expected);
 
         //then
-        System.out.println("Po wyjsciu z metody" + numbersProcessor.filterNumberStrings(enterList));
-        System.out.println("Wynik z pliku" + resultList);
 
-        Assert.assertEquals(resultList, numbersProcessor.filterNumberStrings(enterList));
+        Assert.assertEquals(expected.get(0), actual.get(0));
+        Assert.assertEquals(expected.get(1), actual.get(1));
+        Assert.assertEquals(expected.get(3), actual.get(3));
+
+        Assert.assertEquals(expected, actual);
+
+        //Assert.assertEquals(expected, actual);
         //Assert.assertArrayEquals(resultListFromTest.toArray(), createListAsResultOfTest().toArray());
         //equals - metoda do porywnywania Lists
     }

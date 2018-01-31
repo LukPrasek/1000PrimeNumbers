@@ -14,11 +14,11 @@ public class NumbersProcessor {
                 String currentStringContainingOnlyNumbers = readList.get(i);
                 String currentStringTrimmed = currentStringContainingOnlyNumbers.trim();
                 String[] splitStringIntoDigits = currentStringTrimmed.split(("\\b\\s+\\b"));
-                String singleRowArray = getIntegers(splitStringIntoDigits) + "\n";//nadpisuje liste
+                String singleRowArray = getIntegers(splitStringIntoDigits) + "\n";
                 finalListForWritingToFile.add(singleRowArray);
             }
         }
-        //System.out.println("Final list" + finalListForWritingToFile);
+       // System.out.println("Final list" + finalListForWritingToFile);
         return finalListForWritingToFile;
     }
 
@@ -44,8 +44,7 @@ public class NumbersProcessor {
             }
             arrayContainingSpringsAndSum += digitAsString;
             arrayContainingSpringsAndSum += sumAsString;
-            //System.out.println(arrayContainingSpringsAndSum);
-        }
+                    }
         return arrayContainingSpringsAndSum;
     }
 

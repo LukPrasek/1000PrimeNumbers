@@ -19,13 +19,10 @@ public class Program {
     public void startApp(String path) {
 
         String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
-
         File file = new File(path);
         File fileO = new File(outputPath);
-
-        List<String> list = fileHelper.read(file);
-
-        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(list);
+        List<String> currentList = fileHelper.read(file);
+        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(currentList);
         fileHelper.writeF(fileO, listContainingDigitsAsStrings);
     }
 }
