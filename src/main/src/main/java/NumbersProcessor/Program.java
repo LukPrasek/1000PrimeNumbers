@@ -17,10 +17,11 @@ public class Program {
 
     public String startApp(String path) {
 
-        List<String> currentList = fileHelper.read(path);
-        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(currentList);
+
+        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(fileHelper.read(path));
 
         return fileHelper.writeF(path, listContainingDigitsAsStrings);
+//        return null;
 
     }
 }

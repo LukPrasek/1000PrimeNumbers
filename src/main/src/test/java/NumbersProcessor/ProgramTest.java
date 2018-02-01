@@ -2,39 +2,36 @@ package NumbersProcessor;
 
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
-import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class ProgramTest {
 
     @Test
-    public void startApp() {
+    public void startAppTest() {
         //Given
         String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\resources\\liczby.txt";
+        String tryOne = "as";
         NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
         FileHelper mockFileHelper = mock(FileHelper.class);
-        File mockFile = mock(File.class);
         List mockList = Mockito.mock(ArrayList.class);
         Program program = new Program(mockNumbersProcessor, mockFileHelper);
 
         //when
+        program.startApp(path);
 
-        //Mockito.when(program.startApp(path).thenReturn(path));
 
-        //Mockito.when(mockNumbersProcessor.filterNumberStrings(mockList)).thenReturn(new ArrayList());
-Mockito.verify(mockFileHelper.read(path)), program.startApp(path)
-Mockito.verify(mockFileHelper.read(path)), program.startApp(path)
         //then
-        Assert.assertEquals(program.startApp(path), mockFileHelper.read(path));
-        //Assert.assertEquals(new ArrayList<>(), mockFileHelper.read(mockFile));
-        //Assert.assertEquals(new ArrayList<>(), mockNumbersProcessor.filterNumberStrings(mockList));
-
+        verify(mockFileHelper).read(path);
+        //Assert.assertEquals(mockFileHelper.read(tryOne), mockNumbersProcessor.filterNumberStrings(new ArrayList<>()));
+        verify(mockFileHelper.writeF(path, mockList));
     }
+
+
 }
