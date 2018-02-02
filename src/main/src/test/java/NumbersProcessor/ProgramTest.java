@@ -2,8 +2,9 @@ package NumbersProcessor;
 
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
+import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
+import org.mockito.ArgumentCaptor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,21 +18,31 @@ public class ProgramTest {
     public void startAppTest() {
         //Given
         String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\main\\resources\\liczby.txt";
-        String tryOne = "as";
         NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
         FileHelper mockFileHelper = mock(FileHelper.class);
-        List mockList = Mockito.mock(ArrayList.class);
         Program program = new Program(mockNumbersProcessor, mockFileHelper);
+        List<String>testList=new ArrayList<>();
+
 
         //when
         program.startApp(path);
+        final ArgumentCaptor<String> pathCaptor = ArgumentCaptor.forClass((Class) String.class);
 
+        final ArgumentCaptor<List<String>> listCaptor = ArgumentCaptor.forClass((Class) List.class);
+
+        final ArgumentCaptor<List<String>> finalListCaptor = ArgumentCaptor.forClass((Class) List.class);
 
         //then
+        verify(mockNumbersProcessor).filterNumberStrings(listCaptor.capture());
+
+        verify(mockFileHelper).writeF(pathCaptor.capture(),finalListCaptor.capture());
+
+        Assert.assertEquals(path, pathCaptor.getValue());//same functionality for this method as verify
         verify(mockFileHelper).read(path);
-        //Assert.assertEquals(mockFileHelper.read(tryOne), mockNumbersProcessor.filterNumberStrings(new ArrayList<>()));
-        verify(mockFileHelper.writeF(path, mockList));
+
+        Assert.assertEquals(mockFileHelper.read(path), listCaptor.getValue());
+        Assert.assertEquals(path, pathCaptor.getValue());
+
+        Assert.assertEquals(testList, finalListCaptor.getValue());
     }
-
-
 }

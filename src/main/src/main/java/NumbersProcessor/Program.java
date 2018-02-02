@@ -17,12 +17,8 @@ public class Program {
 
     public String startApp(String path) {
 
-
         List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(fileHelper.read(path));
-
         return fileHelper.writeF(path, listContainingDigitsAsStrings);
-//        return null;
-
     }
 }
 
