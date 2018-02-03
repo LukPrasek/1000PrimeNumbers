@@ -44,5 +44,7 @@ public class ProgramTest {
         Assert.assertEquals(path, pathCaptor.getValue());
 
         Assert.assertEquals(testList, finalListCaptor.getValue());
+
+        verify(mockNumbersProcessor).filterNumberStrings(new ArrayList<>());
     }
 }
