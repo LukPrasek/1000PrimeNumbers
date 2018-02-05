@@ -3,6 +3,7 @@ package NumbersProcessor;
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
@@ -16,9 +17,15 @@ public class Program {
     }
 
     public String startApp(String path) {
+        return fileHelper.writeF(path, requestNumbersProcessing(fileHelperRequest(path)));
+    }
 
-        List<String> listContainingDigitsAsStrings = numbersProcessor.filterNumberStrings(fileHelper.read(path));
-        return fileHelper.writeF(path, listContainingDigitsAsStrings);
+    public List<String> fileHelperRequest(String path) {
+        return fileHelper.read(path);
+    }
+
+    public List<String> requestNumbersProcessing(List<String> list) {
+        return numbersProcessor.filterNumberStrings(list);
     }
 }
 

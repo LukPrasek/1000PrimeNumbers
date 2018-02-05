@@ -33,18 +33,18 @@ public class ProgramTest {
         final ArgumentCaptor<List<String>> finalListCaptor = ArgumentCaptor.forClass((Class) List.class);
 
         //then
-        verify(mockNumbersProcessor).filterNumberStrings(listCaptor.capture());
 
         verify(mockFileHelper).writeF(pathCaptor.capture(),finalListCaptor.capture());
+
+
+        Assert.assertEquals(mockFileHelper.read(path), listCaptor.getValue());
+        Assert.assertEquals(path, pathCaptor.getValue());
+        Assert.assertEquals(testList, finalListCaptor.getValue());
 
         Assert.assertEquals(path, pathCaptor.getValue());//same functionality for this method as verify
         verify(mockFileHelper).read(path);
 
-        Assert.assertEquals(mockFileHelper.read(path), listCaptor.getValue());
-        Assert.assertEquals(path, pathCaptor.getValue());
-
-        Assert.assertEquals(testList, finalListCaptor.getValue());
-
+        verify(mockNumbersProcessor).filterNumberStrings(listCaptor.capture());
         verify(mockNumbersProcessor).filterNumberStrings(new ArrayList<>());
     }
 }
