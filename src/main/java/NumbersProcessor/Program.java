@@ -17,19 +17,8 @@ public class Program {
     }
 
     public String startApp(String path) {
-        List<String> listF = fileHelperRequest(path);
-        List<String> list = requestNumbersProcessing(listF);
+        List<String> list = numbersProcessor.filterNumberStrings(fileHelper.read(path));
         return fileHelper.writeF(path, list);
-
-    }
-
-    public List<String> fileHelperRequest(String path) {
-
-        return fileHelper.read(path);
-    }
-
-    public List<String> requestNumbersProcessing(List<String> list) {
-        return numbersProcessor.filterNumberStrings(list);
     }
 }
 

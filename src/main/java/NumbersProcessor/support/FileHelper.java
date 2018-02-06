@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class FileHelper {
 
-
     public List<String> read(String path) {
         File file = new File(path);
         List<String> readList = new ArrayList<>();

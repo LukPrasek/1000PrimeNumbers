@@ -2,49 +2,83 @@ package NumbersProcessor;
 
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
-import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.ArgumentCaptor;
+import org.mockito.Mock;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.*;
+import static org.mockito.Matchers.anyList;
+import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class ProgramTest {
 
     @Test
-    public void startAppTest() {
-        //Given
-        String path = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\test\\resources\\Test_1.txt";
-        NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
+    public void shouldCheckIfPathIsPassedToFileHelper() {
+        //given
         FileHelper mockFileHelper = mock(FileHelper.class);
+        NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
         Program program = new Program(mockNumbersProcessor, mockFileHelper);
-        List<String>testList=new ArrayList<>();
-
+        String path = "foo";
 
         //when
         program.startApp(path);
-        final ArgumentCaptor<String> pathCaptor = ArgumentCaptor.forClass((Class) String.class);
-
-        final ArgumentCaptor<List<String>> listCaptor = ArgumentCaptor.forClass((Class) List.class);
-
-        final ArgumentCaptor<List<String>> finalListCaptor = ArgumentCaptor.forClass((Class) List.class);
 
         //then
-
-        verify(mockFileHelper).writeF(pathCaptor.capture(),finalListCaptor.capture());
-
-
-//        Assert.assertEquals(mockFileHelper.read(path), listCaptor.getValue());
-//        Assert.assertEquals(path, pathCaptor.getValue());
-//        Assert.assertEquals(testList, finalListCaptor.getValue());
-//
-//        Assert.assertEquals(path, pathCaptor.getValue());//same functionality for this method as verify
         verify(mockFileHelper).read(path);
-
-        verify(mockNumbersProcessor).filterNumberStrings(listCaptor.capture());
-        verify(mockNumbersProcessor).filterNumberStrings(new ArrayList<>());
     }
+
+    @Test
+    public void shouldCheckIfListIsPassedToNumbersProcessor() {
+        //given
+        FileHelper mockFileHelper = mock(FileHelper.class);
+        NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
+        Program program = new Program(mockNumbersProcessor, mockFileHelper);
+
+        List<String> injectedList = generateSupportRandomList(1);
+        String path = "foo";
+        when(mockFileHelper.read(path)).thenReturn(injectedList);
+
+        //when
+        program.startApp(path);
+
+        //then
+        verify(mockNumbersProcessor).filterNumberStrings(injectedList);
+    }
+
+    @Test
+    public void shouldCheckIfPathAndListArePassedToWriteMethod() {
+        //given
+        FileHelper mockFileHelper = mock(FileHelper.class);
+        NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
+        Program program = new Program(mockNumbersProcessor, mockFileHelper);
+        String path = "foo";
+        List<String> list1 = generateSupportRandomList(1);
+        List<String> list2 = generateSupportRandomList(2);
+
+        when(mockFileHelper.read(path)).thenReturn(list1);
+        when(mockNumbersProcessor.filterNumberStrings(list1)).thenReturn(list2);
+
+        //when
+        program.startApp(path);
+
+        //then
+        verify(mockFileHelper).writeF(path, list2);
+    }
+
+    private List<String> generateSupportRandomList(int loop) {
+        List<String> generatedList = new ArrayList<>();
+        for (int i = 1; i <= loop; i++) {
+            generatedList.add("Horse");
+            generatedList.add("Cow");
+            generatedList.add("Bull");
+        }
+        return generatedList;
+    }
+
+
 }

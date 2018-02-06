@@ -18,12 +18,11 @@ public class NumbersProcessor {
                 finalListForWritingToFile.add(singleRowArray);
             }
         }
-       // System.out.println("Final list" + finalListForWritingToFile);
-        return finalListForWritingToFile;
+            return finalListForWritingToFile;
     }
 
     private String getIntegers(String[] splitStringIntoDigits) {
-        Integer[] stringParser = new Integer[splitStringIntoDigits.length + 1];// size 10+1
+        Integer[] stringParser = new Integer[splitStringIntoDigits.length + 1];
         int sumOfSingleLine = 0;
 
         String arrayContainingSpringsAndSum = "";
@@ -32,14 +31,14 @@ public class NumbersProcessor {
         String sumAsString = "";
 
         for (int j = 0; j < splitStringIntoDigits.length; j++) {
-            int singleDigit = Integer.parseInt(splitStringIntoDigits[j]);//size 10
+            int singleDigit = Integer.parseInt(splitStringIntoDigits[j]);
             stringParser[j] = singleDigit;
             sumOfSingleLine += stringParser[j];
             digitAsString = stringParser[j] + " + ";
 
-            if (j == splitStringIntoDigits.length - 1) {//last item in the table
+            if (j == splitStringIntoDigits.length - 1) {
                 stringParser[j + 1] = sumOfSingleLine;
-                digitAsString = " " + stringParser[j];//override last string in the table
+                digitAsString = " " + stringParser[j];
                 sumAsString = " = " + sumOfSingleLine;
             }
             arrayContainingSpringsAndSum += digitAsString;

@@ -44,6 +44,7 @@ public class NumbersProcessorTest {
         }
         return resultList;
     }
+
     @org.junit.Test
     public void filterNumberStringsTest() {
 
