@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.Matchers.anyList;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -29,7 +30,6 @@ public class ProgramTest1 {
 
         //then
         verify(mockFileHelper).read(path);
-
     }
 
     @Test
@@ -53,17 +53,29 @@ public class ProgramTest1 {
         FileHelper mockFileHelper = mock(FileHelper.class);
         NumbersProcessor mockNumbersProcessor = mock(NumbersProcessor.class);
         Program program = new Program(mockNumbersProcessor, mockFileHelper);
-        String path = "foot";
-        List<String> injectedList = mock(ArrayList.class);
-        System.out.println(injectedList.toString());
+        String path = "foo";
+        List<String> list1 = generateSupportRandomList(1);
+        List<String> list2 = generateSupportRandomList(2);
+
+        when(mockFileHelper.read(path)).thenReturn(list1);
+        when(mockNumbersProcessor.filterNumberStrings(list1)).thenReturn(list2);
 
         //when
         program.startApp(path);
 
         //then
-        verify(mockFileHelper).writeF(path, mockFileHelper.read(path));
-        System.out.println(mockFileHelper.read(path));
-         }
+        verify(mockFileHelper).writeF(path, list2);
+    }
+
+    private List<String> generateSupportRandomList(int loop) {
+        List<String> generatedList = new ArrayList<>();
+        for (int i = 1; i <= loop; i++) {
+            generatedList.add("Horse");
+            generatedList.add("Cow");
+            generatedList.add("Bull");
+        }
+        return generatedList;
+    }
 
 
 }

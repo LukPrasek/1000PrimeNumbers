@@ -15,7 +15,7 @@ public class NumbersProcessorTest {
     private NumbersProcessor numbersProcessor = new NumbersProcessor();
 
     public List<String> readFileToCreateListForTest() {
-        String path = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\test\\resources\\Test_1.txt";
+        String path = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\test\\resources\\Test_1.txt";
         File file = new File(path);
         List<String> enterList = new ArrayList<>();
         try (Scanner scanner = new Scanner(file)) {
@@ -30,7 +30,7 @@ public class NumbersProcessorTest {
     }
 
     public List<String> createListAsResultOfTest() {
-        String pathResult = "D:\\Users\\212434152\\Lukasz\\private\\java\\workspace\\1000PrimeNumbers\\src\\test\\resources\\Test_1_result.txt";
+        String pathResult = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\test\\resources\\Test_1_result.txt";
         File file = new File(pathResult);
         List<String> resultList = new ArrayList<>();
 

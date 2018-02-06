@@ -17,10 +17,14 @@ public class Program {
     }
 
     public String startApp(String path) {
-        return fileHelper.writeF(path, requestNumbersProcessing(fileHelperRequest(path)));
+        List<String> listF = fileHelperRequest(path);
+        List<String> list = requestNumbersProcessing(listF);
+        return fileHelper.writeF(path, list);
+
     }
 
     public List<String> fileHelperRequest(String path) {
+
         return fileHelper.read(path);
     }
 
