@@ -3,14 +3,10 @@ package NumbersProcessor;
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.anyList;
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -47,7 +43,7 @@ public class ProgramTest {
         program.startApp(path);
 
         //then
-        verify(mockNumbersProcessor).filterNumberStrings(injectedList);
+        verify(mockNumbersProcessor).processStringList(injectedList);
     }
 
     @Test
@@ -61,7 +57,7 @@ public class ProgramTest {
         List<String> list2 = generateSupportRandomList(2);
 
         when(mockFileHelper.read(path)).thenReturn(list1);
-        when(mockNumbersProcessor.filterNumberStrings(list1)).thenReturn(list2);
+        when(mockNumbersProcessor.processStringList(list1)).thenReturn(list2);
 
         //when
         program.startApp(path);

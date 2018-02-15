@@ -53,7 +53,7 @@ public class NumbersProcessorTest {
         List<String> expected = createListAsResultOfTest();
 
         //when
-        List<String> actual = numbersProcessor.filterNumberStrings(readFileToCreateListForTest());
+        List<String> actual = numbersProcessor.processStringList(readFileToCreateListForTest());
 
         //then
         Assert.assertEquals(expected.get(0), actual.get(0));
