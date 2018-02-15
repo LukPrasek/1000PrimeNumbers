@@ -28,7 +28,7 @@ public class FileHelper {
         try (PrintWriter printWriter = new PrintWriter(outputPath)) {
             for (int i = 0; i < finalList.size(); i++) {
                 String value = finalList.get(i);
-                printWriter.write(value);
+                printWriter.println(value);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

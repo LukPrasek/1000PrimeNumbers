@@ -1,6 +1,7 @@
 package NumbersProcessor.logic;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,7 +16,7 @@ public class NumbersProcessorTest {
     private NumbersProcessor numbersProcessor = new NumbersProcessor();
 
     public List<String> readFileToCreateListForTest() {
-        String path = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\test\\resources\\Test_1.txt";
+        String path = "src\\test\\resources\\Test_1.txt";
         File file = new File(path);
         List<String> enterList = new ArrayList<>();
         try (Scanner scanner = new Scanner(file)) {
@@ -30,7 +31,7 @@ public class NumbersProcessorTest {
     }
 
     public List<String> createListAsResultOfTest() {
-        String pathResult = "D:\\luk\\java\\workspace\\InteliiJ\\1000PrimeNumbers\\src\\test\\resources\\Test_1_result.txt";
+        String pathResult = "src\\test\\resources\\Test_1_result.txt";
         File file = new File(pathResult);
         List<String> resultList = new ArrayList<>();
 
@@ -45,7 +46,7 @@ public class NumbersProcessorTest {
         return resultList;
     }
 
-    @org.junit.Test
+    @Test
     public void filterNumberStringsTest() {
 
         //given

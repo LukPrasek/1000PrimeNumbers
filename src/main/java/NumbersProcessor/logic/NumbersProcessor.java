@@ -11,27 +11,23 @@ public class NumbersProcessor {
         List<String> outputList = new ArrayList<>();
         
         for (String string : stringList) {
-            
-            String outputLine = null;
             int sum = 0;
-            if (filterStringsWithNumbersAndSpacesOnly(string) != null) {
-                // 1   2    4    6
+            if (!filterStringsWithNumbersAndSpacesOnly(string).equals("")) {
                 String[] digitsArray = trimAndSplitStringByWhiteSpaces(string);
-                // [1,2,4,6]
+        
+                String outputLine = "";
+        
                 for (String stringWithDigits : digitsArray) {
                     int currentNumber = parseStringOfDigits(stringWithDigits);
+                    System.out.println(currentNumber);
                     sum += currentNumber;
                     outputLine += "  +  " + currentNumber;
                 }
-                //[    +   1    +    2
-                outputLine.replaceFirst("  +", "   ");
-                outputLine += "  =  " + sum;
-                
+                outputLine = outputLine.replaceFirst("\\s+\\p{Punct}", "");
+                outputLine += "  =  " + sum;//TODO
+                outputList.add(outputLine);
             }
-            
-            outputList.add(outputLine);
         }
-        
         return outputList;
     }
     
@@ -40,7 +36,7 @@ public class NumbersProcessor {
         if (candidate.matches("^[\\d\\s]+$")) {
             return candidate;
         } else {
-            return null;
+            return "";
         }
     }
     
