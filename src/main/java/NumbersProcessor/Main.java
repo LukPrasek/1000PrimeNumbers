@@ -10,6 +10,4 @@ public class Main {
         Program program = new Program(new NumbersProcessor(), new FileHelper());
         program.startApp(path);
     }
-
 }
-

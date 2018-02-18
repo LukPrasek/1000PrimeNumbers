@@ -76,5 +76,4 @@ public class ProgramTest {
         return generatedList;
     }
 
-
 }

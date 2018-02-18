@@ -45,16 +45,17 @@ public class NumbersProcessorTest {
     }
 
     @Test
-    public void shouldCheckIfReturnListIsEqualToExpected() {
+    public void shouldCheckIfReturnedListIsEqualToExpected() {
 
         //given
         numbersProcessor = new NumbersProcessor();
         List<String> expected = createListAsResultOfTest();
+        System.out.println("expected"+expected);
 
         //when
         List<String> actual = numbersProcessor.processString(readFileToCreateListForTest());
-
+        System.out.println("actual"+actual);
         //then
-          Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 }

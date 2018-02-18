@@ -1,6 +1,7 @@
 package NumbersProcessor.logic;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NumbersProcessor {
@@ -12,19 +13,22 @@ public class NumbersProcessor {
         for (String currentString : readList) {
             String outputLine = "";
             int sumOfSingleLine = 0;
-            if (!(fileterStringWithNumbersAndSpacesOnly(currentString).equals(""))) {
+
+            if (!(filterStringWithNumbersAndSpacesOnly(currentString).equals(""))) {
+
                 String[] arrayWithDigits = trimAndSplitStringByWhiteSpaces(currentString);
+
                 for (String digitString : arrayWithDigits) {
                     int number = parseStringToInteger(digitString);
                     sumOfSingleLine += number;
                     outputLine += " + " + number;
                 }
                 outputLine += " = " + sumOfSingleLine + "\n";
-                outputLine = outputLine.replaceFirst("\\s+[+]", "");
+                outputLine = outputLine.replaceFirst("[\\s]+[+]\\s+", "");
+                outputList.add(outputLine);
             }
-
-            outputList.add(outputLine);
         }
+
         return outputList;
     }
 
@@ -36,9 +40,10 @@ public class NumbersProcessor {
         return currentString.trim().split((("\\b\\s+\\b")));
     }
 
-    private String fileterStringWithNumbersAndSpacesOnly(String candidate) {
+    private String filterStringWithNumbersAndSpacesOnly(String candidate) {
         if (candidate.matches("^[\\d\\s]+$")) {
             return candidate;
+
         } else {
             return "";
         }
