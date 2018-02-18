@@ -22,7 +22,7 @@ public class FileHelper {
         return readList;
     }
 
-    public String writeF(String path, List<String> finalList) {
+    public String writeListToFile(String path, List<String> finalList) {
         String outputPath = path.replace("liczby.txt", "liczbyNew.txt");
 
         try (PrintWriter printWriter = new PrintWriter(outputPath)) {

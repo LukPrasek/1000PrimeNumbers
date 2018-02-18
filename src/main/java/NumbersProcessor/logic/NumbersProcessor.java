@@ -5,49 +5,42 @@ import java.util.List;
 
 public class NumbersProcessor {
 
-    List<String> finalListForWritingToFile = new ArrayList<String>();
+    public List<String> processString(List<String> readList) {
 
-    public List<String> filterNumberStrings(List<String> readList) {
+        List<String> outputList = new ArrayList<>();
 
-        for (int i = 0; i < readList.size(); i++) {
-            if (readList.get(i).matches("^[\\d\\s]+$")) {
-                String currentStringContainingOnlyNumbers = readList.get(i);
-                String currentStringTrimmed = currentStringContainingOnlyNumbers.trim();
-                String[] splitStringIntoDigits = currentStringTrimmed.split(("\\b\\s+\\b"));
-                String singleRowArray = getIntegers(splitStringIntoDigits) + "\n";
-                finalListForWritingToFile.add(singleRowArray);
+        for (String currentString : readList) {
+            String outputLine = "";
+            int sumOfSingleLine = 0;
+            if (!(fileterStringWithNumbersAndSpacesOnly(currentString).equals(""))) {
+                String[] arrayWithDigits = trimAndSplitStringByWhiteSpaces(currentString);
+                for (String digitString : arrayWithDigits) {
+                    int number = parseStringToInteger(digitString);
+                    sumOfSingleLine += number;
+                    outputLine += " + " + number;
+                }
+                outputLine += " = " + sumOfSingleLine + "\n";
+                outputLine = outputLine.replaceFirst("\\s+[+]", "");
             }
+
+            outputList.add(outputLine);
         }
-            return finalListForWritingToFile;
+        return outputList;
     }
 
-    private String getIntegers(String[] splitStringIntoDigits) {
-        Integer[] stringParser = new Integer[splitStringIntoDigits.length + 1];
-        int sumOfSingleLine = 0;
-
-        String arrayContainingSpringsAndSum = "";
-
-        String digitAsString;
-        String sumAsString = "";
-
-        for (int j = 0; j < splitStringIntoDigits.length; j++) {
-            int singleDigit = Integer.parseInt(splitStringIntoDigits[j]);
-            stringParser[j] = singleDigit;
-            sumOfSingleLine += stringParser[j];
-            digitAsString = stringParser[j] + " + ";
-
-            if (j == splitStringIntoDigits.length - 1) {
-                stringParser[j + 1] = sumOfSingleLine;
-                digitAsString = " " + stringParser[j];
-                sumAsString = " = " + sumOfSingleLine;
-            }
-            arrayContainingSpringsAndSum += digitAsString;
-            arrayContainingSpringsAndSum += sumAsString;
-                    }
-        return arrayContainingSpringsAndSum;
+    private int parseStringToInteger(String digitString) {
+        return Integer.valueOf(digitString);
     }
 
+    private String[] trimAndSplitStringByWhiteSpaces(String currentString) {
+        return currentString.trim().split((("\\b\\s+\\b")));
+    }
 
+    private String fileterStringWithNumbersAndSpacesOnly(String candidate) {
+        if (candidate.matches("^[\\d\\s]+$")) {
+            return candidate;
+        } else {
+            return "";
+        }
+    }
 }
-
-

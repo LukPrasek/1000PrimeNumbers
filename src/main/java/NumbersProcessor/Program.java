@@ -3,7 +3,6 @@ package NumbersProcessor;
 import NumbersProcessor.logic.NumbersProcessor;
 import NumbersProcessor.support.FileHelper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
@@ -17,8 +16,8 @@ public class Program {
     }
 
     public String startApp(String path) {
-        List<String> list = numbersProcessor.filterNumberStrings(fileHelper.read(path));
-        return fileHelper.writeF(path, list);
+        List<String> list = numbersProcessor.processString(fileHelper.read(path));
+        return fileHelper.writeListToFile(path, list);
     }
 }
 
